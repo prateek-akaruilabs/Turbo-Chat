@@ -1,0 +1,4 @@
+<%= form_with(model: [@single_room, @message], remote: true, class: 'd-flex') do |f| %>
+    <%= f.text_field :body, value: '', placeholder: 'Enter Message', class: 'form-control', autocomplete: 'off' %>
+    <%= f.submit 'Create Message', class: 'btn btn-primary' %>
+<% end %>

@@ -1,0 +1,4 @@
+<%= form_with(model: @room, remote: true, class: 'd-flex') do |f| %>
+    <%= f.text_field :name, value: '', placeholder: 'Enter Name', class: 'form-control', autocomplete: 'off' %>
+    <%= f.submit 'Create Room', class: 'btn btn-primary' %>
+<% end %>
